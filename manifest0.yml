@@ -1,0 +1,10 @@
+---
+applications:
+- name: cf-demo-i319971
+  buildpack: nodejs_buildpack
+  command: node app.js
+  memory: 128M
+  disk_quota: 128M
+  host: cf-demo-i319971
+  services:
+  - mongo-cf
